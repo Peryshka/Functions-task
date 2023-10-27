@@ -10,41 +10,38 @@
 //function for sum (add)
 const add = (firstNum, secondNum) => {
  const result = firstNum+secondNum;
- console.log(result);
  return result;
 }
-add(10,20);
+console.log(add(5,7));
 
 //function for multiply
 const multiply = (firstNum, secondNum) => {
     const result = firstNum * secondNum;
-    console.log(result);
     return result;
 }
-multiply(10, 5);
+console.log(multiply(10, 5));
+
 //3 variant for expression 36325 * 9824 + 777
 console.log("Third variant");
-multiply(36325, 9824) + add(777);
+console.log(add(multiply(36325, 9824 ), 777));
 /*
  2) Сделайте функцию, которая возвращает квадрат числа.
   Число передается параметром.
  */
 const square = (Number) => {
     const result = Number*Number;
-    console.log(result);
     return result;
 }
-square(5);
+console.log(square(7));
 /*
 3) Сделайте функцию, которая возвращает сумму двух чисел.
 */
 //Function Declaration
 function sum(firstNumber, secondNumber){
     const result  = firstNumber + secondNumber;
-    console.log(result);
     return result;
 }
-sum(20, 31);
+console.log(sum(70, 31));
 /*
 4) Сделайте функцию, которая отнимает от первого числа
 второе и делит на третье.
@@ -52,10 +49,9 @@ sum(20, 31);
 //Function Expression
 const expression = function(firstNum, secondNum, thirdNum){
     const result = (firstNum-secondNum)/thirdNum;
-    console.log(result);
     return result;
 }
-expression(2000,50,3);
+console.log(expression(2000,50,3));
 /*
 5) Сделайте функцию, которая принимает параметром число от 1 до 7,
 а возвращает день недели на русском языке.
@@ -64,34 +60,26 @@ const weekDays = (num) => {
     if(num >= 1 || num <= 7){
         switch(num){
             case 1:
-                console.log("Понедельник");
-                break;
+                return "Понедельник";
             case 2:
-                console.log("Вторник");
-                break;
+                return "Вторник";
             case 3:
-                console.log("Среда");
-                break;
+                return "Среда";
             case 4:
-                console.log("Четверг");
-                break;
+                return "Четверг";
             case 5:
-                console.log("Пятница");
-                break;
+                return "Пятница";
             case 6:
-                console.log("Суббота");
-                break;
+                return "Суббота";
             case 7:
-                console.log("Воскресенье");
-                break;
+                return "Воскресенье";
             default:
-                console.log("Не угадали");
+                return "Не угадали";
         }
 
     }
-    console.log(num);
     return num;
 }
-weekDays(2);
+console.log(weekDays(7));
 
 
